@@ -8,5 +8,5 @@ export default defineConfig({
 	server: {
 		allowedHosts: true,
 	},
-	base: "https://firedrop6000.github.io/Portfolio/",
+	base: "https://firedrop6000.github.io/portfolio/",
 });
