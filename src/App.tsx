@@ -5,7 +5,7 @@ import Projects from "./pages/Projects";
 
 const App = () => {
 	return (
-		<Router basename="/portfolio">
+		<Router>
 			<NavBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
