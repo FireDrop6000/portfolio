@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-html,
-body {
-	height: 100dvh;
-	height: -webkit-fill-available;
-	overflow: hidden;
-}
-
 @keyframes appear {
 	from {
 		opacity: 0;
