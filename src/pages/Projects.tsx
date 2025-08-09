@@ -28,7 +28,7 @@ const Projects = () => {
 					<a
 						href={repo.html_url}
 						target="_blank"
-						className="max-w-sm p-6 hover:bg-gray-100 dark:hover:bg-gray-700 hover:rounded-md transition-all duration-150 animate-appear"
+						className="max-w-sm p-6 hover:bg-gray-100 dark:hover:bg-gray-700 hover:rounded-md transition ease-in duration-200 animate-appear"
 						rel="noopener noreferrer"
 					>
 						<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

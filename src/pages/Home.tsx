@@ -1,3 +1,4 @@
+import Career from "../components/Career";
 import HeroHeader from "../components/HeroHeader";
 import QuickLinks from "../components/QuickLinks";
 import Ribbon from "../components/Ribbon";
@@ -24,6 +25,10 @@ const Home = () => {
 				<div className="flex flex-none items-end justify-center">
 					<ScrollDown />
 				</div>
+			</div>
+			<div className="flex flex-col items-center justify-center">
+				<span className="text-6xl font-bold underline mb-20">Career</span>
+				<Career />
 			</div>
 		</>
 	);

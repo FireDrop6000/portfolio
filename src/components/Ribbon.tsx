@@ -15,6 +15,7 @@ import JUnit from "../icons/JUnit";
 import Maven from "../icons/Maven";
 import MongoDB from "../icons/MongoDB";
 import MySQL from "../icons/MySQL";
+import Neovim from "../icons/Neovim";
 import Photoshop from "../icons/Photoshop";
 import Postgres from "../icons/Postgres";
 import Postman from "../icons/Postman";
@@ -60,17 +61,18 @@ const Ribbon = () => {
 		<MongoDB />,
 		<C />,
 		<Python />,
+		<Neovim />,
+		<Git />,
+		<Postman />,
+		<Prettier />,
+		<Sonarlint />,
+		<Sonarqube />,
 		<AfterEffects />,
 		<Illustrator />,
 		<Photoshop />,
 		<Canva />,
 		<Gimp />,
 		<Inkscape />,
-		<Git />,
-		<Postman />,
-		<Prettier />,
-		<Sonarlint />,
-		<Sonarqube />,
 	];
 	return (
 		<div className="text-zinc-400 w-[calc(100vw-1rem)] inline-flex flex-nowrap overflow-hidden mask-x-from-70% mask-x-to-90% mt-7">
@@ -82,7 +84,7 @@ const Ribbon = () => {
 					return (
 						<li
 							key={index}
-							className="hover:text-zinc-500 transition-all duration-150"
+							className="hover:text-zinc-500 transition ease-in duration-200"
 						>
 							{logo}
 						</li>
