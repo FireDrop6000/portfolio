@@ -25,11 +25,11 @@ const Career = () => {
 								key={index}
 								className="relative flex md:flex-col items-center group"
 							>
-								<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 hover:border-violet-400 group transition ease-in duration-200">
+								<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 hover:border-violet-400 group transition ease-in duration-200 -translate-x-20 md:translate-none">
 									{" "}
 									<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 group-hover:border-violet-400 transition ease-in duration-200"></div>
 								</div>
-								<div className="flex flex-col absolute  md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100">
+								<div className="flex flex-col absolute  md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none">
 									<span className="text-md font-bold underline">
 										{year.year}
 									</span>
@@ -44,22 +44,22 @@ const Career = () => {
 									key={index}
 									className="relative flex md:flex-col items-center  group"
 								>
-									<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 hover:border-violet-400 group transition ease-in duration-200">
+									<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 hover:border-violet-400 group transition ease-in duration-200 -translate-x-20 md:translate-none">
 										{" "}
 										<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 group-hover:border-violet-400 transition ease-in duration-200"></div>
 									</div>
-									<div className="flex flex-col absolute md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100">
+									<div className="flex flex-col absolute md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none">
 										<span className="text-md font-bold underline">
 											{year.year}
 										</span>
 										{year.achievement}
 									</div>
 								</div>
-								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg"></div>
-								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg"></div>
-								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg"></div>
-								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg"></div>
-								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg"></div>
+								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg -translate-x-20 md:translate-none"></div>
+								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg -translate-x-20 md:translate-none"></div>
+								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg -translate-x-20 md:translate-none"></div>
+								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg -translate-x-20 md:translate-none"></div>
+								<div className="px-1 md:px-3 h-2 bg-zinc-500 text-white rounded-lg -translate-x-20 md:translate-none"></div>
 							</>
 						);
 					}
