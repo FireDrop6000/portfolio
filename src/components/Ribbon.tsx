@@ -84,7 +84,7 @@ const Ribbon = () => {
 					return (
 						<li
 							key={index}
-							className="hover:text-zinc-500 transition ease-in duration-200"
+							className="hover:text-zinc-500 dark:hover:text-zinc-200 transition ease-in duration-200"
 						>
 							{logo}
 						</li>

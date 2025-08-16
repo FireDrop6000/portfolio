@@ -6,7 +6,7 @@ interface Props {
 
 const HeroHeader = ({ children }: Props) => {
 	return (
-		<div className="flex items-center justify-center font-bold text-5xl border-b-3 border-b-black py-5 px-2">
+		<div className="flex items-center justify-center font-bold text-5xl border-b-3 border-b-black  dark:border-b-white py-5 px-2">
 			{children}
 		</div>
 	);

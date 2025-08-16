@@ -1,5 +1,6 @@
 import Career from "../components/Career";
 import HeroHeader from "../components/HeroHeader";
+import Linux from "../components/Linux";
 import QuickLinks from "../components/QuickLinks";
 import Ribbon from "../components/Ribbon";
 import Socials from "../components/Socials";
@@ -8,7 +9,7 @@ import ScrollDown from "../icons/ScrollDown";
 const Home = () => {
 	return (
 		<>
-			<div className="flex flex-col items-center justify-center min-h-[calc(100vh-1rem)] w-80 mx-auto">
+			<div className="flex flex-col items-center justify-center min-h-[calc(100vh-1rem)] w-80 mx-auto ">
 				<div className="flex flex-grow flex-col mt-10 md:mt-55 justify-center items-center">
 					<HeroHeader>Pratik Gayen</HeroHeader>
 					<div className="text-[16px] text-center py-3 px-2 w-80">
@@ -26,7 +27,7 @@ const Home = () => {
 					<ScrollDown />
 				</div>
 			</div>
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col items-center justify-center mt-20">
 				<span className="text-6xl font-bold underline mb-20">Career</span>
 				<Career />
 			</div>
