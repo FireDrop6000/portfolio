@@ -1,6 +1,6 @@
 import Career from "../components/Career";
 import HeroHeader from "../components/HeroHeader";
-import Linux from "../components/Linux";
+// import Linux from "../components/Linux";
 import QuickLinks from "../components/QuickLinks";
 import Ribbon from "../components/Ribbon";
 import Socials from "../components/Socials";
