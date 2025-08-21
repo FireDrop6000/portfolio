@@ -28,7 +28,7 @@ const SmallLinux = () => {
 		},
 	];
 	return (
-		<div className="flex flex-col md:hidden mt-30 p-5 items-center justify-center">
+		<div className="flex flex-col md:hidden mt-30 p-1 items-center justify-center">
 			<h5 className="text-3xl font-bold underline underline-offset-14 mb-10 whitespace-nowrap">
 				Linux Desktop Works
 			</h5>
