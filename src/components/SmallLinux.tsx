@@ -35,7 +35,7 @@ const SmallLinux = () => {
 			<div className="flex flex-col gap-5">
 				{ssDetails.map((ssDetail) => {
 					return (
-						<div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+						<div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
 							<AnimatePresence mode="wait">
 								<motion.div
 									initial={{ opacity: 0, y: 30 }}
