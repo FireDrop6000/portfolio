@@ -30,7 +30,7 @@ const Career = () => {
 									<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 group-hover:border-violet-400 transition ease-in duration-200"></div>
 								</div>
 								<div className="flex flex-col absolute  md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none">
-									<span className="text-md font-bold underline">
+									<span className="text-md font-bold underline underline-offset-3">
 										{year.year}
 									</span>
 									{year.achievement}
@@ -49,7 +49,7 @@ const Career = () => {
 										<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 group-hover:border-violet-400 transition ease-in duration-200"></div>
 									</div>
 									<div className="flex flex-col absolute md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none">
-										<span className="text-md font-bold underline">
+										<span className="text-md font-bold underline underline-offset-3">
 											{year.year}
 										</span>
 										{year.achievement}

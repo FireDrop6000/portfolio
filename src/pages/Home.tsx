@@ -1,8 +1,9 @@
 import Career from "../components/Career";
 import HeroHeader from "../components/HeroHeader";
-// import Linux from "../components/Linux";
+import Linux from "../components/Linux";
 import QuickLinks from "../components/QuickLinks";
 import Ribbon from "../components/Ribbon";
+import SmallLinux from "../components/SmallLinux";
 import Socials from "../components/Socials";
 import ScrollDown from "../icons/ScrollDown";
 
@@ -28,9 +29,13 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="flex flex-col items-center justify-center mt-20">
-				<span className="text-6xl font-bold underline mb-20">Career</span>
+				<span className="text-6xl font-bold underline underline-offset-14 mb-20">
+					Career
+				</span>
 				<Career />
 			</div>
+			<Linux />
+			<SmallLinux />
 		</>
 	);
 };
