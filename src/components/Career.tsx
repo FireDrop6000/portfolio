@@ -29,7 +29,7 @@ const Career = () => {
 									{" "}
 									<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 group-hover:border-violet-400 transition ease-in duration-200"></div>
 								</div>
-								<div className="flex flex-col absolute  md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none">
+								<div className="flex flex-col absolute  md:mt-13 w-48 p-3 border  rounded-lg  text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none  ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none dark:text-white bg-white/2.5 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)]  transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none border-r border-white/50 overflow-hidden">
 									<span className="text-md font-bold underline underline-offset-3">
 										{year.year}
 									</span>
@@ -48,7 +48,7 @@ const Career = () => {
 										{" "}
 										<div className="p-2 bg-none text-white rounded-sm border-4 border-zinc-400 group-hover:border-violet-400 transition ease-in duration-200"></div>
 									</div>
-									<div className="flex flex-col absolute md:mt-13 w-48 p-3 bg-white border border-gray-200 rounded-lg shadow-lg text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none transition duration-200 ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none">
+									<div className="flex flex-col absolute  md:mt-13 w-48 p-3 border  rounded-lg  text-sm text-gray-700 opacity-100 md:opacity-0 scale-95 pointer-events-none  ease-out group-hover:opacity-100 group-hover:scale-100 -translate-x-5 md:translate-none dark:text-white bg-white/2.5 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)]  transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none border-r border-white/50 overflow-hidden">
 										<span className="text-md font-bold underline underline-offset-3">
 											{year.year}
 										</span>

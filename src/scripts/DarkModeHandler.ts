@@ -13,7 +13,7 @@ export function darkModeHandler() {
 		mediaQuery.addEventListener("change", handler);
 
 		return () => mediaQuery.removeEventListener("change", handler);
-	});
+	}, []);
 
 	return isDark;
 }

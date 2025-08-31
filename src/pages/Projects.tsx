@@ -1,34 +1,19 @@
-import { Octokit } from "@octokit/rest";
-import type { Endpoints } from "@octokit/types";
+import { useEffect, useState } from "react";
 import Fork from "../icons/Fork";
 import Star from "../icons/Star";
-
-const octokit = new Octokit();
-
-type Repo =
-	Endpoints["GET /users/{username}/repos"]["response"]["data"][number];
-
-let sortedRepos: Repo[] = [];
-
-try {
-	const repos = await octokit.rest.repos.listForUser({
-		username: "FireDrop6000",
-		per_page: 100,
-		type: "owner",
-	});
-
-	if (repos.status === 200) {
-		sortedRepos = repos.data
-			.filter((repo) => !repo.private && !repo.fork)
-			.sort((a, b) => {
-				return (b.stargazers_count || 0) - (a.stargazers_count || 0);
-			});
-	}
-} catch (error) {
-	console.error("Failed to fetch repositories");
-}
+import { retrieveRepos } from "../scripts/RetrieveRepos";
 
 const Projects = () => {
+	const [sortedRepos, setSortedRepos] = useState<any[]>([]);
+
+	useEffect(() => {
+		const fetchRepos = async () => {
+			const repos = await retrieveRepos();
+			setSortedRepos(repos);
+		};
+		fetchRepos();
+	}, []);
+
 	return (
 		<div className="flex flex-col items-center justify-center mt-64 mb-50">
 			<h1 className="text-6xl underline font-bold">Projects</h1>
@@ -49,20 +34,20 @@ const Projects = () => {
 							</p>
 						)}
 						{repo.language && (
-							<div className="text-xs w-fit bg-zinc-200 px-2 py-1 rounded-md font-semibold mt-3">
+							<div className="text-xs text-black w-fit bg-zinc-200 px-2 py-1 rounded-md font-semibold mt-3">
 								{repo.language}
 							</div>
 						)}
 						{repo.stargazers_count || repo.forks_count ? (
 							<div className="flex gap-2 mt-2">
 								{repo.stargazers_count ? (
-									<div className="flex gap-1 items-center justify-center">
+									<div className="flex gap-1 items-center justify-center text-black dark:text-white">
 										<Star />
 										<span>{repo.stargazers_count}</span>
 									</div>
 								) : null}
 								{repo.forks_count ? (
-									<div className="flex gap-1 items-center justify-center">
+									<div className="flex gap-1 items-center justify-center text-black dark:text-white">
 										<Fork />
 										<span>{repo.forks_count}</span>
 									</div>

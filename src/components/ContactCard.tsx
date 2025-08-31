@@ -1,0 +1,38 @@
+const ContactCard = () => {
+	return (
+		<div className="w-[80vw] md:w-[40vw] p-6 relative dark:text-white bg-white/2.5 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)]  transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none border-r border-white/50 rounded-xl overflow-hidden">
+			<div className="relative z-10">
+				<div className="flex flex-col items-center text-center">
+					<div className="w-12 h-12 rounded-full flex items-center justify-center mb-4">
+						<svg
+							width="800px"
+							height="800px"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M19.4003 18C19.7837 17.2499 20 16.4002 20 15.5C20 12.4624 17.5376 10 14.5 10C11.4624 10 9 12.4624 9 15.5C9 18.5376 11.4624 21 14.5 21L21 21C21 21 20 20 19.4143 18.0292M18.85 12C18.9484 11.5153 19 11.0137 19 10.5C19 6.35786 15.6421 3 11.5 3C7.35786 3 4 6.35786 4 10.5C4 11.3766 4.15039 12.2181 4.42676 13C5.50098 16.0117 3 18 3 18H9.5"
+								stroke="currentColor"
+								strokeWidth="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+							/>
+						</svg>
+					</div>
+					<h3 className="text-lg font-semibold mb-2">Up for a chat?</h3>
+					<p className="text-md opacity-90 mb-4 leading-relaxed">
+						I’m just a message away. Let’s talk, build, and create.
+					</p>
+					<div className="flex gap-2">
+						<button className="inline-block rounded-full px-2.5 py-1.5 text-sm font-medium bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30  duration-300 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased overflow-hidden">
+							Contact Me
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default ContactCard;

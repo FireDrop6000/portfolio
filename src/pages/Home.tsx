@@ -1,6 +1,8 @@
 import Career from "../components/Career";
+import ContactCard from "../components/ContactCard";
 import HeroHeader from "../components/HeroHeader";
 import Linux from "../components/Linux";
+import Proficiency from "../components/Proficiency";
 import QuickLinks from "../components/QuickLinks";
 import Ribbon from "../components/Ribbon";
 import SmallLinux from "../components/SmallLinux";
@@ -36,6 +38,10 @@ const Home = () => {
 			</div>
 			<Linux />
 			<SmallLinux />
+			<Proficiency />
+			<div className="flex flex-col mt-30 items-center justify-center">
+				<ContactCard />
+			</div>
 		</>
 	);
 };

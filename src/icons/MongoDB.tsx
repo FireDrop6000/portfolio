@@ -1,4 +1,4 @@
-import { darkModeHandler } from "../scripts/darkModeHandler";
+import { darkModeHandler } from "../scripts/DarkModeHandler";
 
 const MongoDB = () => {
 	const isDark = darkModeHandler();
