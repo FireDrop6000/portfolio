@@ -17,7 +17,7 @@ const Proficiency = () => {
 	return (
 		<div className="flex flex-col md:flex-row md:gap-10 justify-center items-center mt-20 md:mt-15 p-3">
 			<div className="md:flex md:flex-col items-start">
-				<span className="text-4xl font-bold underline underline-offset-14">
+				<span className="text-3xl font-bold underline underline-offset-14">
 					Language Proficiency
 				</span>
 				<span className="hidden mt-7 md:block text-xl wrap-normal w-[30vw] opacity-65">
