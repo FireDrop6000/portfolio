@@ -1,5 +1,6 @@
 import Career from "../components/Career";
 import ContactCard from "../components/ContactCard";
+import Footer from "../components/Footer";
 import HeroHeader from "../components/HeroHeader";
 import Linux from "../components/Linux";
 import Proficiency from "../components/Proficiency";
@@ -42,6 +43,7 @@ const Home = () => {
 			<div className="flex flex-col mt-30 items-center justify-center">
 				<ContactCard />
 			</div>
+			<Footer />
 		</>
 	);
 };

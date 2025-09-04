@@ -32,7 +32,7 @@ const Proficiency = () => {
 					<span className="text-lg">Loading chart...</span>
 				</div>
 			)}
-			<span className="text-xl mt-3 md:hidden wrap-normal w-screen opacity-65 text-center p-7">
+			<span className="text-xl  md:hidden wrap-normal w-screen opacity-65 text-center p-7">
 				My dev stack in numbers
 			</span>
 		</div>

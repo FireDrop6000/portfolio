@@ -1,31 +1,35 @@
-import { Octokit } from "@octokit/rest";
-import type { Endpoints } from "@octokit/types";
-
 export async function retrieveRepos() {
-	const octokit = new Octokit();
+	const cacheKey = "repoData";
+	const cacheTimeKey = "repoDateTime";
+	const now = Date.now();
 
-	type Repo =
-		Endpoints["GET /users/{username}/repos"]["response"]["data"][number];
+	const cached = localStorage.getItem(cacheKey);
+	const cachedTime = localStorage.getItem(cacheTimeKey);
+	const cacheDuration = 10 * 60 * 1000;
 
-	let sortedRepos: Repo[] = [];
+	if (cached && cachedTime && now - Number(cachedTime) < cacheDuration) {
+		return JSON.parse(cached);
+	}
+
+	let sortedRepos = [];
 
 	try {
-		const repos = await octokit.rest.repos.listForUser({
-			username: "FireDrop6000",
-			per_page: 100,
-			type: "owner",
-		});
+		const res = await fetch(
+			"https://nt2ntzrpjnxsyrxn3hyk5trw5i0gxoea.lambda-url.ap-south-1.on.aws/",
+		);
 
-		if (repos.status === 200) {
-			sortedRepos = repos.data
-				.filter((repo) => !repo.private && !repo.fork)
-				.sort((a, b) => {
-					return (b.stargazers_count || 0) - (a.stargazers_count || 0);
-				});
+		if (!res.ok) {
+			throw new Error(`HTTP invalid request: ${res.status}`);
 		}
-	} catch (error) {
-		console.error("Failed to fetch repositories");
+
+		sortedRepos = await res.json();
+	} catch (err) {
+		console.error("Failed to fetch repositories", err);
+		return [];
 	}
+
+	localStorage.setItem(cacheKey, JSON.stringify(sortedRepos));
+	localStorage.setItem(cacheTimeKey, String(now));
 
 	return sortedRepos;
 }

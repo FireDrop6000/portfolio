@@ -3,6 +3,7 @@ import { textChanger } from "./CellHoverContext";
 
 const LinuxDescriptions = () => {
 	const { hoveredCell } = textChanger();
+
 	const getText = () => {
 		switch (hoveredCell) {
 			case 1:
@@ -34,14 +35,18 @@ const LinuxDescriptions = () => {
 				};
 		}
 	};
+
 	return (
-		<div className="w-[35vw] flex text-black dark:text-white wrap-normal h-90 items-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+		<div className="w-[35vw] flex  wrap-normal h-90 items-center justify-center p-6  rounded-xl  glass-effect overflow-hidden">
 			<AnimatePresence mode="wait">
 				<motion.div
 					key={hoveredCell}
 					initial={{ opacity: 0, y: 10 }}
 					animate={{ opacity: 1, y: 0 }}
-					exit={{ opacity: 0, y: -10 }}
+					exit={{
+						opacity: 0,
+						y: -10,
+					}}
 					transition={{ duration: 0.4 }}
 				>
 					<h5 className="mb-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">

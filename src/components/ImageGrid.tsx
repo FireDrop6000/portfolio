@@ -7,6 +7,7 @@ import { textChanger } from "./CellHoverContext";
 
 const ImageGrid = () => {
 	const { hoveredCell, setHoveredCell } = textChanger();
+
 	const imageSet = [
 		{ id: 1, file: Linux1 },
 		{ id: 2, file: Linux2 },
@@ -25,22 +26,23 @@ const ImageGrid = () => {
 				return undefined;
 		}
 	};
+
 	return (
-		<div className="flex relative">
-			<div className="rounded-full size-[40vw] dark:bg-slate-800  shadow-[0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)]" />
-			<div className="absolute inset-0 size-[40vw] grid grid-cols-3 gap-x-6 items-center justify-center place-items-center">
+		<div className="flex ">
+			<div className=" inset-0 size-[40vw] grid grid-cols-3 gap-x-6 items-center justify-center place-items-center">
 				{imageSet.map((imageFile) => {
 					return (
 						<img
 							src={imageFile.file}
 							alt="Windows-Linux"
 							className="h-27 w-80 flex items-center justify-center border-2 rounded-lg"
-							onMouseEnter={() => setHoveredCell(imageFile.id)}
-							onMouseLeave={() => setHoveredCell(null)}
+							onMouseEnter={() => {
+								setHoveredCell(imageFile.id);
+							}}
 						/>
 					);
 				})}
-				<div className="col-span-3 h-90 w-160 flex items-center justify-center rounded-md bg-white dark:bg-black text-black dark:text-white">
+				<div className="col-span-3 h-90 w-160 flex items-center justify-center rounded-md  text-black dark:text-white">
 					<AnimatePresence mode="wait">
 						<motion.div
 							key={hoveredCell}

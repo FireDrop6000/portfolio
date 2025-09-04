@@ -1,6 +1,6 @@
 const ContactCard = () => {
 	return (
-		<div className="w-[80vw] md:w-[40vw] p-6 relative dark:text-white bg-white/2.5 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)]  transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none border-r border-white/50 rounded-xl overflow-hidden">
+		<div className="w-[80vw] md:w-[40vw] p-6 glass-effect rounded-xl overflow-hidden">
 			<div className="relative z-10">
 				<div className="flex flex-col items-center text-center">
 					<div className="w-12 h-12 rounded-full flex items-center justify-center mb-4">
@@ -25,7 +25,7 @@ const ContactCard = () => {
 						I’m just a message away. Let’s talk, build, and create.
 					</p>
 					<div className="flex gap-2">
-						<button className="inline-block rounded-full px-2.5 py-1.5 text-sm font-medium bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30  duration-300 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased overflow-hidden">
+						<button className="inline-block rounded-full px-2.5 py-1.5 text-sm font-medium  glass-button overflow-hidden">
 							Contact Me
 						</button>
 					</div>
