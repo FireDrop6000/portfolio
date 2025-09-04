@@ -11,7 +11,7 @@ const Footer = () => {
 					<div className="scale:75 md:scale-70">
 						<Logo />
 					</div>
-					<span className="text-xs md:text-sm opacity-60">
+					<span className="text-xs md:text-sm opacity-60 text-right">
 						Pratik Gayen 2025
 					</span>
 				</div>
