@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const ContactCard = () => {
 	return (
 		<div className="w-[80vw] md:w-[40vw] p-6 glass-effect rounded-xl overflow-hidden">
@@ -25,9 +27,12 @@ const ContactCard = () => {
 						I’m just a message away. Let’s talk, build, and create.
 					</p>
 					<div className="flex gap-2">
-						<button className="inline-block rounded-full px-2.5 py-1.5 text-sm font-medium  glass-button overflow-hidden">
+						<Link
+							to="/contact"
+							className="inline-block rounded-full px-2.5 py-1.5 text-sm font-medium  glass-button overflow-hidden"
+						>
 							Contact Me
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

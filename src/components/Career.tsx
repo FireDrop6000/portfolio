@@ -1,3 +1,5 @@
+import { AnimatePresence, motion } from "framer-motion";
+
 const Career = () => {
 	const careerDescription = [
 		{
