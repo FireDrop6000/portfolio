@@ -2,6 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Sending from "../icons/Sending";
 import { type MsgSchema, msgSchema } from "../lib/Types";
 
 const Contact = () => {
@@ -64,41 +65,6 @@ const Contact = () => {
 							request. Try again later!
 						</div>
 					)}
-
-					{errors.firstName && (
-						<div className="alert-box" role="alert">
-							<span className="font-medium">Danger alert!</span>{" "}
-							{`${errors.firstName.message}`}
-						</div>
-					)}
-
-					{errors.lastName && (
-						<div className="alert-box" role="alert">
-							<span className="font-medium">Danger alert!</span>{" "}
-							{`${errors.lastName.message}`}
-						</div>
-					)}
-
-					{errors.email && (
-						<div className="alert-box" role="alert">
-							<span className="font-medium">Danger alert!</span>{" "}
-							{`${errors.email.message}`}
-						</div>
-					)}
-
-					{errors.phone && (
-						<div className="alert-box" role="alert">
-							<span className="font-medium">Danger alert!</span>{" "}
-							{`${errors.phone.message}`}
-						</div>
-					)}
-
-					{errors.msg && (
-						<div className="alert-box" role="alert">
-							<span className="font-medium">Danger alert!</span>{" "}
-							{`${errors.msg.message}`}
-						</div>
-					)}
 				</div>
 
 				<form
@@ -110,6 +76,12 @@ const Contact = () => {
 							<label htmlFor="FirstName" className="block text-sm font-bold">
 								First name
 							</label>
+							{errors.firstName && (
+								<div className="alert-box" role="alert">
+									<span className="font-medium">Danger alert!</span>{" "}
+									{`${errors.firstName.message}`}
+								</div>
+							)}
 							<input
 								id="FirstName"
 								{...register("firstName")}
@@ -123,6 +95,12 @@ const Contact = () => {
 							<label htmlFor="LastName" className="block text-sm font-bold">
 								Last name
 							</label>
+							{errors.lastName && (
+								<div className="alert-box" role="alert">
+									<span className="font-medium">Danger alert!</span>{" "}
+									{`${errors.lastName.message}`}
+								</div>
+							)}
 							<input
 								id="LastName"
 								{...register("lastName")}
@@ -136,6 +114,12 @@ const Contact = () => {
 							<label htmlFor="Email" className="block text-sm font-bold">
 								Email
 							</label>
+							{errors.email && (
+								<div className="alert-box" role="alert">
+									<span className="font-medium">Danger alert!</span>{" "}
+									{`${errors.email.message}`}
+								</div>
+							)}
 							<input
 								id="Email"
 								{...register("email")}
@@ -149,6 +133,12 @@ const Contact = () => {
 							<label htmlFor="Phone" className="block text-sm font-bold">
 								Phone number
 							</label>
+							{errors.phone && (
+								<div className="alert-box" role="alert">
+									<span className="font-medium">Danger alert!</span>{" "}
+									{`${errors.phone.message}`}
+								</div>
+							)}
 							<input
 								id="Phone"
 								{...register("phone")}
@@ -167,6 +157,12 @@ const Contact = () => {
 							>
 								Your message
 							</label>
+							{errors.msg && (
+								<div className="alert-box" role="alert">
+									<span className="font-medium">Danger alert!</span>{" "}
+									{`${errors.msg.message}`}
+								</div>
+							)}
 							<textarea
 								id="Message"
 								{...register("msg")}
@@ -179,9 +175,18 @@ const Contact = () => {
 					<button
 						type="submit"
 						disabled={isSubmitting}
-						className="glass-button px-3.5 py-2 font-medium rounded-full overflow-hidden text-sm cursor-pointer"
+						className="glass-button font-bold px-3.5  py-2  rounded-full overflow-hidden text-sm cursor-pointer"
 					>
-						{isSubmitting ? "Submitting..." : "Submit"}
+						{isSubmitting ? (
+							<div className="flex relative pl-8">
+								<div className="-top-6.5 -left-13 w-35 absolute">
+									<Sending />
+								</div>
+								Submitting...
+							</div>
+						) : (
+							"Submit"
+						)}
 					</button>
 				</form>
 			</motion.div>
