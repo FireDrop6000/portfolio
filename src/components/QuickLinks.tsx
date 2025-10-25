@@ -7,7 +7,14 @@ const QuickLinks = () => {
 				Projects
 			</Link>
 			<div className="bg-blue-500 w-1 h-1 rounded-full"></div>
-			<span>Download CV</span>
+			<a
+				className="hover:underline"
+				href="../../resources/Resume_PratikGayen.pdf"
+				target="_blank"
+				rel="noopener"
+			>
+				Download CV
+			</a>
 		</div>
 	);
 };
