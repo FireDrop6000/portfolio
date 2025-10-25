@@ -9,7 +9,7 @@ const QuickLinks = () => {
 			<div className="bg-blue-500 w-1 h-1 rounded-full"></div>
 			<a
 				className="hover:underline"
-				href="https://firebasestorage.googleapis.com/v0/b/portfolio-5f51e.firebasestorage.app/o/Resume_PratikGayen.pdf?alt=media&token=e0ac6321-7e78-43ef-b37b-0462a78123b0"
+				href="https://firebasestorage.googleapis.com/v0/b/portfolio-5f51e.firebasestorage.app/o/Resume_PratikGayen.pdf?alt=media"
 				target="_blank"
 				rel="noopener"
 			>
