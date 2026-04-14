@@ -11,6 +11,6 @@ export default ({ mode }: ConfigEnv) => {
 		server: {
 			allowedHosts: true,
 		},
-		base: process.env.VITE_BASE_URL || "http://localhost:5173/",
+		base: process.env.VITE_BASE_URL || "/",
 	});
 };
