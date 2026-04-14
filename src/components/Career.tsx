@@ -14,6 +14,11 @@ const Career = () => {
 			year: "2025",
 			achievement: "Started as Data Analyst at DigitalSherpa.ai",
 		},
+		{
+			year: "2026",
+			achievement:
+				"Left DS to join as Junior Associate in SBI but computers and development still remain as an integral part of my life",
+		},
 	];
 	return (
 		<div className="flex">
